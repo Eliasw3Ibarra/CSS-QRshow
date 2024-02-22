@@ -1,0 +1,78 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    position: relative;
+    background-color: hsl(212, 45%, 89%);
+}
+#container{
+    position: fixed;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    top: 15%;
+left: 40%;
+top: 40px;
+margin: -12.5px 0 0 -12.5px;
+width: 300px;
+height: 500px;
+margin: 10px 10px 10px 10px;
+border-radius: 15px;
+}
+
+.contenedor-img{
+    margin-top: 5%;
+    display: flex;
+    width: 90%;
+    height: 60%;
+    justify-content: center;
+    
+  
+}
+.contenedor-img img{
+   border-radius: 15px;
+   width: 100%;
+   height: auto;
+  
+    
+}
+
+@supports(object-fit: cover){
+    .contenedor-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.texto{
+    display: grid;
+    flex-direction: column;
+    padding-top: 5%;
+   
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.texto h1{
+    font-size: 18px;
+    width: 80%;
+    padding-left: 10%;
+    margin-bottom: 1%;
+}
+
+.texto p{
+    color: hsl(220, 15%, 55%);
+    font-size: 12px;
+    margin-top: 1px;
+   width: 80%;
+   padding-left: 10%;
+   padding-top: 10px;
+   padding-bottom: 1px;
+    object-fit: cover;
+}
